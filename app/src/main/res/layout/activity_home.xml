@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <com.yeonfish.hybrid_app_frame.common.webview.CustomWebView
+        android:id="@+id/webviewBrowser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/viewNaviController"
+        android:background="#ffff00" />
+    <LinearLayout
+        android:id="@+id/viewNaviController"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_bg_option"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <ImageButton
+                android:id="@+id/btnPrev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="20dp"
+                android:background="@drawable/bg_inweb_set"
+                android:contentDescription="@android:string/untitled"
+                android:src="@drawable/btn_browser_prev_set" />
+
+            <ImageButton
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="20dp"
+                android:layout_toRightOf="@id/btnPrev"
+                android:background="@drawable/bg_inweb_set"
+                android:contentDescription="@android:string/untitled"
+                android:src="@drawable/btn_browser_next_set" />
+
+            <ImageButton
+                android:id="@+id/btnHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@android:string/untitled"
+                android:background="@drawable/bg_inweb_set"
+                android:padding="20dp"
+                android:src="@drawable/ic_baseline_home_24"
+                android:tint="#000000"
+                tools:src="@drawable/ic_baseline_home_24" />
+
+            <ImageButton
+                android:id="@+id/btnRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:padding="20dp"
+                android:background="@drawable/bg_inweb_set"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@android:string/untitled"
+                android:src="@drawable/btn_browser_refresh_set" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/loadingView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:contentDescription="@android:string/untitled"
+        android:background="@drawable/common_loading"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
