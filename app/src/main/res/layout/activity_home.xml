@@ -63,8 +63,8 @@
                 android:background="@drawable/bg_inweb_set"
                 android:padding="20dp"
                 android:src="@drawable/ic_baseline_home_24"
-                android:tint="#000000"
-                tools:src="@drawable/ic_baseline_home_24" />
+                tools:src="@drawable/ic_baseline_home_24"
+                app:tint="#000000" />
 
             <ImageButton
                 android:id="@+id/btnRefresh"
@@ -79,11 +79,12 @@
                 android:src="@drawable/btn_browser_refresh_set" />
         </RelativeLayout>
     </LinearLayout>
+
     <ImageView
         android:id="@+id/loadingView"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:contentDescription="@android:string/untitled"
+        android:layout_centerInParent="true"
         android:background="@drawable/common_loading"
-        android:layout_centerInParent="true"/>
+        android:contentDescription="@android:string/untitled" />
 </RelativeLayout>

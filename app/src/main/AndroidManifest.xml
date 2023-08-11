@@ -17,7 +17,7 @@
         android:networkSecurityConfig="@xml/network_security_config"
         tools:targetApi="31" >
 
-        <service android:name="kr.co.familyAlbum.common.push.PushService"
+        <service android:name="com.yeonfish.hybrid_app_frame.common.push.PushService"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
@@ -25,9 +25,10 @@
         </service>
 
         <activity
-            android:name="kr.co.familyAlbum.IntroActivity"
+            android:name="com.yeonfish.hybrid_app_frame.common.activity.IntroActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
             android:exported="true">
 
             <intent-filter>
@@ -40,12 +41,12 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="familyalbum" />
+                <data android:scheme="hybrid_app_frame_java" />
             </intent-filter>
 
         </activity>
         <activity
-            android:name="kr.co.familyAlbum.home.HomeActivity"
+            android:name="com.yeonfish.hybrid_app_frame.common.activity.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/WebviewBaseTheme"
             android:windowSoftInputMode="adjustResize" />

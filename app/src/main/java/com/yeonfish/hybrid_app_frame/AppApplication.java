@@ -14,6 +14,6 @@ public class AppApplication extends MultiDexApplication {
     public void onCreate() {
         super.onCreate();
 
-        instance = this;Logger.addLogAdapter(new AndroidLogAdapter());
+        instance = this;
     }
 }

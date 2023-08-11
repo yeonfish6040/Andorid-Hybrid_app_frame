@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "537929624807",
+    "project_id": "appframe-3560d",
+    "storage_bucket": "appframe-3560d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537929624807:android:b01c98db5c074d0d424642",
+        "android_client_info": {
+          "package_name": "com.yeonfish.hybrid_app_frame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537929624807-04ecgnl19cpqp7c9bddmm7klnvk7mc5m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yeonfish.hybrid_app_frame",
+            "certificate_hash": "c05d55ba076f9eedca588728478ad969a3135fdd"
+          }
+        },
+        {
+          "client_id": "537929624807-cn1rrf6cjelih3patnfrd8hv9qqij8h4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOxBFXf77tAu4UdrTBBlDlJGcvrAgHOLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537929624807-cn1rrf6cjelih3patnfrd8hv9qqij8h4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
